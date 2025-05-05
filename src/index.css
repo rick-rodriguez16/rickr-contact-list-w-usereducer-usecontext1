@@ -1,0 +1,29 @@
+.card {
+    height: 10em;
+    width: 50em;
+    margin: .5em auto;
+}
+
+.card-image {
+    height: 10em;
+    width: 10em;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+.card-contact-info {
+    width: 30em;
+}
+
+.contact-button {
+    height: 35%;
+    border: none;
+}
+
+.add-contact-row{
+    margin-top: 2em;
+}
+
+.contact-form {
+    margin-bottom: 2em;
+}
