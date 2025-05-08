@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { ContactCard } from "../components/ContactCard";
 import useGlobalReducer from "../hooks/useGlobalReducer";
 
-import { fetchAllContacts } from "../lib/fetch";
+import { deleteContact, fetchAllContacts } from "../lib/fetch";
 
 export const Contact = () => {
     const { store, dispatch } = useGlobalReducer();
@@ -36,7 +36,7 @@ export const Contact = () => {
                             </button>
                             <button 
                                 className='btn btn-outline-dark btn-del contact-button'
-                                onClick={() => {}}
+                                onClick={() => deleteContact(contact.id, dispatch)}
                             >
                             Del
                             </button>
