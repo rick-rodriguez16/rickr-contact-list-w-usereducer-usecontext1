@@ -99,7 +99,7 @@ export const deleteContact = async(id, dispatch) => {
         }
         dispatch({
             type: 'deletedContact',
-            payload: id,
+            payload: { id: id },
         })
     }
     catch (error) {
